@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sunset Travels - About Us</title>
+<style>
+  /* Sharing the same styles as index.html */
+  * {
+    box-sizing: content-box;
+   
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f9f9f9 0%, #e6f2ff 100%);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    background-color: #004080;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1.25rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  nav a:hover,
+  nav a:focus {
+    color: #ffcc00;
+    outline: none;
+  }
+  nav a.active {
+    color: #ffcc00;
+    text-decoration: underline;
+  }
+  main {
+    flex-grow: 1;
+    padding: 2rem 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .team-member {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html" class="active" aria-current="page">About Us</a>
+  <a href="services.html">Services</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact Us</a>
+</nav>
+<main>
+  <h1>About Sunset Travels</h1>
+  <section>
+    <h2>Our Story</h2>
+    <p>Founded in 2020, Sunset Travels has grown from a small local agency to a trusted name in the travel industry. We specialize in creating unforgettable travel experiences that cater to all types of travelers, from adventure seekers to luxury enthusiasts.</p>
+  </section>
+  
+  <section>
+    <h2>Our Mission</h2>
+    <p>To provide exceptional travel experiences that create lasting memories while ensuring sustainable and responsible tourism practices.</p>
+  </section>
+
+  <section>
+    <h2>Our Team</h2>
+    <div class="team-member">
+      <h3> Noritah Martha</h3>
+      <p>Founder & CEO</p>
+      <p>With over 15 years of experience in the travel industry, Noritah leads our team with passion and expertise.</p>
+    </div>
+    
+    <div class="team-member">
+      <h3> Mansour Kokole</h3>
+      <p>Head of Operations</p>
+      <p>Mansour ensures that every trip we plan runs smoothly from start to finish.</p>
+    </div>
+    
+    <div class="team-member">
+      <h3>Claire Apolot</h3>
+      <p>Customer Experience Manager</p>
+      <p>Claire and her team work tirelessly to ensure every client receives personalized attention and support.</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2024 Sunset Travels. All rights reserved.</p>
+</footer>
+</body>
+</html>

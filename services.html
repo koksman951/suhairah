@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sunset Travels - Services</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f9f9f9 0%, #e6f2ff 100%);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    background-color: #004080;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1.25rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  nav a:hover,
+  nav a:focus {
+    color: #ffcc00;
+    outline: none;
+  }
+  nav a.active {
+    color: #ffcc00;
+    text-decoration: underline;
+  }
+  main {
+    flex-grow: 1;
+    padding: 2rem 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .service-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="services.html" class="active" aria-current="page">Services</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact Us</a>
+</nav>
+<main>
+  <h1>Our Services</h1>
+  
+  <div class="service-card">
+    <h2>Custom Travel Planning</h2>
+    <p>Let us create a personalized itinerary tailored to your interests, budget, and schedule. We handle all the details so you can focus on enjoying your journey.</p>
+  </div>
+
+  <div class="service-card">
+    <h2>Group Tours</h2>
+    <p>Join our expertly guided group tours to popular destinations. Meet fellow travelers and explore new places with the security and convenience of professional organization.</p>
+  </div>
+
+  <div class="service-card">
+    <h2>Luxury Vacations</h2>
+    <p>Experience the finest accommodations and services with our luxury vacation packages. From private jets to exclusive resorts, we cater to your premium travel needs.</p>
+  </div>
+
+  <div class="service-card">
+    <h2>Adventure Expeditions</h2>
+    <p>Seek thrilling experiences with our adventure travel packages. From mountain climbing to desert safaris, we've got your next adventure covered.</p>
+  </div>
+
+  <div class="service-card">
+    <h2>Corporate Travel</h2>
+    <p>Specialized business travel services including conference planning, team building trips, and corporate retreat organization.</p>
+  </div>
+</main>
+<footer>
+  <p>&copy; 2024 Sunset Travels. All rights reserved.</p>
+</footer>
+</body>
+</html>

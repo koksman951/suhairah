@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sunset Travels - Gallery</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f9f9f9 0%, #e6f2ff 100%);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  nav {
+    background-color: #004080;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1.25rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  nav a:hover,
+  nav a:focus {
+    color: #ffcc00;
+    outline: none;
+  }
+  nav a.active {
+    color: #ffcc00;
+    text-decoration: underline;
+  }
+  main {
+    flex-grow: 1;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  .gallery-item:hover {
+    transform: scale(1.02);
+  }
+  .gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+  }
+  .gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="services.html">Services</a>
+  <a href="gallery.html" class="active" aria-current="page">Gallery</a>
+  <a href="contact.html">Contact Us</a>
+</nav>
+<main>
+  <h1>Travel Gallery</h1>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="images/uganda.webp" alt="Uganda Wildlife Safari">
+      <div class="gallery-caption">Uganda Wildlife Safari</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/Nairobi-City-County-15-2.webp" alt="Nairobi City View">
+      <div class="gallery-caption">Nairobi City View</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/Kigali-City-2-1536x1022.webp" alt="Kigali City">
+      <div class="gallery-caption">Kigali City, Rwanda</div>
+    </div>
+    <div class="gallery-item">
+      <img src="images/Dar-es-Salaam-Tanz-1536x790.webp" alt="Dar es Salaam">
+      <div class="gallery-caption">Dar es Salaam, Tanzania</div>
+    </div>
+  </div>
+</main>
+<footer>
+  <p>&copy; 2024 Sunset Travels. All rights reserved.</p>
+</footer>
+</body>
+</html>
